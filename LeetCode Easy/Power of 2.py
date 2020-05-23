@@ -23,5 +23,12 @@ class Solution:
 
         return i == n
 
+    def isPowerOfTwo2(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        return n > 0 and not (n & n - 1)
+
 x = Solution()
 print(x.isPowerOfTwo(256))
